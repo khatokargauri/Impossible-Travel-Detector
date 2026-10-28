@@ -1,0 +1,89 @@
+{
+  "dataset_label": "SYNTHETIC TEST DATA - fictional users, documentation-range IPs, not real logins or real attacks",
+  "events": [
+    {
+      "event_id": "evt-001", "user_id": "alice_synth",
+      "timestamp": "2026-01-10T04:30:00Z", "ip_address": "192.0.2.10",
+      "status": "SUCCESS", "latitude": 19.0760, "longitude": 72.8777,
+      "note": "Mumbai login"
+    },
+    {
+      "event_id": "evt-002", "user_id": "alice_synth",
+      "timestamp": "2026-01-10T05:00:00Z", "ip_address": "198.51.100.20",
+      "status": "FAILURE", "latitude": -23.5505, "longitude": -46.6333,
+      "note": "Failed login far away; ignored because only successful logins are compared"
+    },
+    {
+      "event_id": "evt-003", "user_id": "alice_synth",
+      "timestamp": "2026-01-10T09:30:00Z", "ip_address": "192.0.2.11",
+      "status": "SUCCESS", "latitude": 18.5204, "longitude": 73.8567,
+      "note": "Pune login, about 120 km away after 5 hours: normal"
+    },
+    {
+      "event_id": "evt-004", "user_id": "bob_synth",
+      "timestamp": "2026-01-10T12:00:00Z", "ip_address": "198.51.100.30",
+      "status": "SUCCESS", "latitude": 40.7128, "longitude": -74.0060,
+      "note": "New York login"
+    },
+    {
+      "event_id": "evt-005", "user_id": "dave_synth",
+      "timestamp": "2026-01-10T08:00:00Z", "ip_address": "203.0.113.40",
+      "status": "SUCCESS", "latitude": 51.5074, "longitude": -0.1278,
+      "note": "London login"
+    },
+    {
+      "event_id": "evt-006", "user_id": "erin_synth",
+      "timestamp": "2026-01-10T08:30:00Z", "ip_address": "203.0.113.50",
+      "status": "SUCCESS", "latitude": -33.8688, "longitude": 151.2093,
+      "note": "Sydney login"
+    },
+    {
+      "event_id": "evt-007", "user_id": "bob_synth",
+      "timestamp": "2026-01-10T12:30:00Z", "ip_address": "203.0.113.31",
+      "status": "SUCCESS", "latitude": 35.6762, "longitude": 139.6503,
+      "note": "Tokyo login 30 minutes after New York: potentially impossible travel"
+    },
+    {
+      "event_id": "evt-008", "user_id": "erin_synth",
+      "timestamp": "2026-01-10T10:00:00Z", "ip_address": "203.0.113.51",
+      "status": "SUCCESS", "latitude": -33.8688, "longitude": 151.2093,
+      "note": "Sydney again, identical location"
+    },
+    {
+      "event_id": "evt-009", "user_id": "dave_synth",
+      "timestamp": "2026-01-10T11:00:00Z", "ip_address": "203.0.113.41",
+      "status": "SUCCESS", "latitude": 52.2053, "longitude": 0.1218,
+      "note": "Cambridge login, about 80 km from London after 3 hours: normal"
+    },
+    {
+      "event_id": "evt-010", "user_id": "carol_synth",
+      "timestamp": "2026-01-10T13:00:00Z", "ip_address": "198.51.100.60",
+      "status": "SUCCESS", "latitude": 48.8566, "longitude": 2.3522,
+      "note": "Only login for this user: nothing to compare"
+    },
+    {
+      "event_id": "evt-011", "user_id": "frank_synth",
+      "timestamp": "2026-01-10T14:00:00Z", "ip_address": "192.0.2.70",
+      "status": "SUCCESS", "latitude": 52.5200, "longitude": 13.4050,
+      "note": "Berlin login"
+    },
+    {
+      "event_id": "evt-012", "user_id": "frank_synth",
+      "timestamp": "2026-01-10T14:20:00Z", "ip_address": "192.0.2.71",
+      "status": "SUCCESS",
+      "note": "No coordinates available: INSUFFICIENT_DATA expected"
+    },
+    {
+      "event_id": "evt-013", "user_id": "grace_synth",
+      "timestamp": "2026-01-10T16:00:00Z", "ip_address": "198.51.100.80",
+      "status": "SUCCESS", "latitude": 19.0760, "longitude": 72.8777,
+      "note": "Mumbai login"
+    },
+    {
+      "event_id": "evt-014", "user_id": "grace_synth",
+      "timestamp": "2026-01-10T16:00:00Z", "ip_address": "203.0.113.81",
+      "status": "SUCCESS", "latitude": 51.5074, "longitude": -0.1278,
+      "note": "London login with the identical timestamp: duplicate timestamp case"
+    }
+  ]
+}
